@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng kí học viên</title>
+    <style>
+        .xanh{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<center>
+    <form style="background-color:lightyellow; padding: 2px 20px 20px 20px ; width:400px" >
+        <h1 class="xanh" style="background-color: lightblue; width: 400px" >Đăng kí học viên</h1>
+        <table>
+            <tr>
+                <td>Họ và tên</td>
+                <td><input type="text" name="hovaten"></td>
+            </tr>
+            <tr>
+                <td>Ngày sinh</td>
+                <td><input type="date" name="Ngaysinh"></td>
+            </tr>
+            <tr>
+                <td>Giới tính</td>
+                <td>
+                    <input type="radio" name="gender">Nam
+                    <input type="radio" name="gender">Nữ
+                </td>
+            </tr>
+            <tr>
+                <td>Địa chỉ</td>
+                <td>
+                    <textarea></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>Lớp</td>
+                <td>
+                    <select>
+                        <option>-Chọn lớp-</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="text" id="email"></td>
+            </tr>
+            <tr>
+                <td>Điện thoại</td>
+                <td><input type="tel" id="phone" name="phone" pattern="[0-9]"{10}></td>
+            </tr>
+            <tr>
+                <td><input type="Submit" value="Đăng kí"></td>
+                <td><button type="Reset" value="Đăng kí">Nhập lại</button></td>
+            </tr>
+        </table>
+    </form>
+</center>
+
+
+
+</body>
+</html>
