@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thuchanh</title>
+    <style type="text/css">
+        legend{
+            color:red;
+        }
+        .abc{
+            font-weight: bold;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+<form action="/action_page.php" method="get" role="form" autocomplete="off" style="background-color:darkturquoise">
+
+    <fieldset>
+        <legend align="center"><strong>MENU</strong></legend>
+            <p style="margin-left:10px" class="abc">You want to purschor today?</p>
+        <select>
+            <option value=" ">Choose things</option>
+            <option value="Candy">Candy</option>
+            <option value="Cake">Cake</option>
+            <option value="Chocolate">Chocolate</option>
+        </select>
+        <br>
+
+        <p class="abc">How many things you would like to purchase ?</p>
+        <ul>
+            <input type="radio" name="agree" value="yes">1 - 1$<br>
+            <input type="radio" name="agree" value="yes">2- 2$<br>
+            <input type="radio" name="agree" value="yes">3- 3$<br>
+        </ul>
+
+        <span class="abc">Name <sup class="star">*</sup></span>
+        <br>
+        <input type="text" name="fname" required="required" placeholder="First name">
+        <input type="text" name="lname" required="required" placeholder="Last name">
+        <br><br>
+
+        <span class="abc">Email <sup class="star">*</sup></span>
+        <br>
+        <input type="email" name="id.email" placeholder="Email" required="required">
+        <br><br>
+        <span class="abc">Phone Number<sup class="star">*</sup></span>
+        <br>
+        <input type="tel" name="phone" id="phone" placeholder="0123" pattern="[0-9]{4}" required>
+        -
+        <input type="tel" name="phone" id="phone" placeholder="456" pattern="[0-9]{3}" required>
+        -
+        <input type="tel" name="phone" id="phone" placeholder="789" pattern="[0-9]{3}" required>
+        <br><br>
+        <input type="Submit" value="Submit">
+    </fieldset>
+</form>
+
+</body>
+</html>

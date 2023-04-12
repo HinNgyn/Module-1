@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+
+                        <h1 style="margin-left:530px">Form register</h1>
+  <fieldset>
+    <legend align="center"><strong>Register</strong></legend>
+
+    <form action="/action_page.php" method="post" style="background-color:greenyellow; padding: 10px 10px 10px 10px" width="350px">
+      First name:
+    <input type="text" name="fname">
+    Last name:
+    <input type="text" name="lname">
+    <br>
+    <tr>
+      Sex:
+      <input type="radio" name="gender">Male
+      <input type="radio" name="gender">Female
+    </tr>
+    <br>
+    Enter your birthday:
+    <input type="date" id="birthday"><br>
+    Email:
+    <input type="email" id="email"><br>
+    Your address:
+    <input type="text" id="address"><br>
+      Your favorite color:
+      <select>
+        <option value="color"></option>
+        <option value="Red">Red</option>
+        <option value="Blue">Blue</option>
+        <option value="Black">Black</option>
+      </select>
+      <br>
+
+      Account you want to register:
+      <input type="text" id="account">
+      <br>
+      Password:
+      <input type="password" id="pass">
+      <br>
+      Confirm your password:
+      <input type="password" id="password">
+     <br>
+      Note:
+      <textarea>
+
+      </textarea>
+    <br>
+    <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </form>
+  </fieldset>
+
+
+</body>
+</html>
