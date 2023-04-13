@@ -2,60 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Form</title>
+    <title>Form Register</title>
 </head>
 <body>
+<center>
+    <fieldset style="width:350px">
+        <legend style="text-align: center; ">Form Register</legend>
+        <center>
+            <form action="http://demo.codegym.vn/6/registration_form/register.php" method="post">
+                <table>
+                    <tr>
+                        <td>First name:</td>
+                        <td><input type="text" name="fname"></td>
+                    </tr>
 
-                        <h1 style="margin-left:530px">Form register</h1>
-  <fieldset>
-    <legend align="center"><strong>Register</strong></legend>
-
-    <form action="/action_page.php" method="post" style="background-color:greenyellow; padding: 10px 10px 10px 10px" width="350px">
-      First name:
-    <input type="text" name="fname">
-    Last name:
-    <input type="text" name="lname">
-    <br>
-    <tr>
-      Sex:
-      <input type="radio" name="gender">Male
-      <input type="radio" name="gender">Female
-    </tr>
-    <br>
-    Enter your birthday:
-    <input type="date" id="birthday"><br>
-    Email:
-    <input type="email" id="email"><br>
-    Your address:
-    <input type="text" id="address"><br>
-      Your favorite color:
-      <select>
-        <option value="color"></option>
-        <option value="Red">Red</option>
-        <option value="Blue">Blue</option>
-        <option value="Black">Black</option>
-      </select>
-      <br>
-
-      Account you want to register:
-      <input type="text" id="account">
-      <br>
-      Password:
-      <input type="password" id="pass">
-      <br>
-      Confirm your password:
-      <input type="password" id="password">
-     <br>
-      Note:
-      <textarea>
-
-      </textarea>
-    <br>
-    <input type="submit" value="Submit">
-      <input type="reset" value="Reset">
-    </form>
-  </fieldset>
-
-
+                    <tr>
+                        <td>Last name</td>
+                        <td><input type="text" name="lname"></td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td><input type="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td><input type="radio" name="gender">Male
+                            <input type="radio" name="gender">Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="submit" value="submit"></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </form>
+        </center>
+    </fieldset>
+</center>
 </body>
 </html>
+
