@@ -9,7 +9,7 @@ if(a>0 && b>0){
 
     document.write('The width is ' + a + '<br/>' + 'The height is ' + b)
     document.write('<br/>The rectangular area is ' + area)
-    
+
 }else{
     alert('Error!')
 }

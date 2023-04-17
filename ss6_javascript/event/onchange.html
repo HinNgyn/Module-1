@@ -16,7 +16,7 @@ cách 1 để bắt sự kiện
     <option value="Ford">Ford</option>
 </select>-->
 
-   <!--cách 2-->
+<!--cách 2-->
 <select id="mySelect">
     <option value="Audi">Audi</option>
     <option value="Mercedes">Mercedes</option>
@@ -29,17 +29,16 @@ cách 1 để bắt sự kiện
 <script>
     var selectElementVa = document.getElementById("mySelect");
     selectElementVa.addEventListener("change", changeFunction);
+
     function changeFunction() {
+        var selectValue = document.getElementById("mySelect").value;
+        alert(selectValue);
+    }
+
+    <!--cách 1 để bắt sự kiện-->
+    function do_sthing() {
         var selectValue = document.getElementById("mySelect").value;
         alert(selectValue);
     }
 </script>
 
-<!--
-cách 1 để bắt sự kiện
-<script>
-    function do_sthing() {
-        var selectValue = document.getElementById("mySelect").value;
-        alert (selectValue);
-    }
-</script>-->

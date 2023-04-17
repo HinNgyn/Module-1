@@ -5,9 +5,11 @@
     <title>OnClick Event</title>
 </head>
 <body>
-    <p onclick="clickOne()">Press Me!</p>
 
-<p id="demo" >Click</p>
+<p onclick="clickOne()">Press Me!</p>
+
+<p id="demo">Click</p>
+
 </body>
 </html>
 
@@ -15,8 +17,10 @@
     function clickOne() {
         alert("Hello!");
     }
+
     var demo01 = document.getElementById("demo");
     demo01.addEventListener("click", pressFunction);
+
     function pressFunction() {
         alert("Hello everyone!!!");
     }
