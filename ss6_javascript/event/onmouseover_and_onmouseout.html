@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Onmouseover</title>
+</head>
+<body>
+
+<p id="mouse"> This is another way!</p>
+<script>
+    var mouse= document.getElementById("mouse");
+    mouse.addEventListener("mouseover", mouseover);
+    mouse.addEventListener("mouseout", mouseout);
+</script>
+
+    <!--cach2-->
+
+<p onmouseover="mouseover()" onmouseout="mouseout()" id="demo">This is a text</p>
+    <script>
+        function mouseover() {
+        document.getElementById("demo").style.color="blue";
+    }
+    function mouseout() {
+        document.getElementById("demo").style.color= "black";
+    }
+
+</script>
+
+</body>
+</html>

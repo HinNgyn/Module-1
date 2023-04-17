@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiển thị đầu ra</title>
+</head>
+<body>
+
+<!--Display output of alert()-->
+<button type="button" onclick="changed00()">Alert!</button>
+
+<!--Display output of document.write()-->
+<button id="momo" onclick="changed01()">Press Me!</button><br>
+
+<!--Display output by console.log()-->
+<button id="mono" onclick="changed02()">Click Me!</button><br>
+
+<!--Display output by HTML-->
+<div id="theHTML"></div>
+<button type="button" onclick="changed03()">Change03</button><br>
+
+<script>
+    function changed00() {
+        alert('Xin chào Việt Nam!');
+    }
+
+    function changed01() {
+        document.write('Change dữ chưa ?');
+    }
+
+    function changed02() {
+        console.log('Changed dữ rồi');
+    }
+
+    function changed03() {
+        document.getElementById('theHTML').innerHTML = "Chào Bạn!";
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Onchange Event</title>
+</head>
+<body>
+<p>Select a new car</p>
+
+<!--
+cách 1 để bắt sự kiện
+<select onchange="do_sthing()" id="mySelect">
+    <option value="Audi">Audi</option>
+    <option value="Mercedes">Mercedes</option>
+    <option value="BMW">BMW</option>
+    <option value="Ford">Ford</option>
+</select>-->
+
+   <!--cách 2-->
+<select id="mySelect">
+    <option value="Audi">Audi</option>
+    <option value="Mercedes">Mercedes</option>
+    <option value="BMW">BMW</option>
+    <option value="Ford">Ford</option>
+</select>
+</body>
+</html>
+<!--Cách 2-->
+<script>
+    var selectElementVa = document.getElementById("mySelect");
+    selectElementVa.addEventListener("change", changeFunction);
+    function changeFunction() {
+        var selectValue = document.getElementById("mySelect").value;
+        alert(selectValue);
+    }
+</script>
+
+<!--
+cách 1 để bắt sự kiện
+<script>
+    function do_sthing() {
+        var selectValue = document.getElementById("mySelect").value;
+        alert (selectValue);
+    }
+</script>-->
