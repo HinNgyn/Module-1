@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MoneyConvert</title>
+
+    <style type="text/css"></style>
+    <script src="convertMoney.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="word.css" type="text/css">
+
+</head>
+<body>
+<div class="wrapper">
+    <header>Currency Converter</header>
+    <form name="chuyendoi01" class="row">
+        <div class="row">
+            <b>Amount</b>
+            <input name="giatri" type="text" placeholder="Amount">
+
+            <b>From currency</b>
+            <select id="c01">
+                <option value="v">VND</option>
+                <option value="u">USD</option>
+            </select>
+
+            <div class="icon" style="text-align: center">
+                <i class='bx bx-transfer-alt'></i>
+            </div>
+
+            <b>To currency</b>
+            <select id="c02">
+                <option value="u">USD</option>
+                <option value="v">VND</option>
+            </select>
+            <button id="transform" class="h" onclick="convert()">Convert</button>
+        </div>
+
+        <h2>Result: </h2>
+        <p id="ct" class="col">...</p>
+    </form>
+</div>
+</body>
+</html>
