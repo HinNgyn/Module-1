@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mouse Event</title>
+
+    <style>
+        img{
+            width: 300px;
+            height: 300px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <img id="Image" src="https://vcdn-vnexpress.vnecdn.net/2019/03/02/bai-toan-3768-1551057063-6906-1551496131.png"/>
+    <br>
+    <p>Click the button to move the ball to right!</p>
+    <br>
+    <button onclick="click01()">Click me!</button>
+<input type="button" value="MoveRight" onclick="moveRight()">
+</body>
+</html>
+
+<script>
+    function click01() {
+       /*cach 1: document.getElementById('Image').style.width = '600px' */
+
+        let a = document.getElementById('Image')
+        a.style.position = 'relative'
+        a.style.left = ' 1000px'
+    }
+    window.onload = click01
+    // if we reload, the ball will call the function click01(){} then the function will be implemented
+    
+    function moveRight() {
+        let b = document.getElementById('Image')
+        b.style.left = parseInt(b.style.left) + 10 + 'px'
+    }
+</script>
