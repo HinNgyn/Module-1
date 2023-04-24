@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+<script>
+
+    let username01 = prompt("Who's there?")
+
+    if (username01 == "Admin") {
+
+    let t = prompt('Enter password:')
+
+        if (t == 'TheMaster') {
+            alert('Welcome')
+        } else if (t == ' ') {
+            alert('Canceled')
+        } else {
+            alert('Wrong password!')
+        }
+
+    } else if (username01 == ' ') {
+        alert('Canceled')
+    } else {
+        alert("I don't know you")
+    }
+
+/*switch_case*/
+        let username = prompt("'Who's there?")
+        switch(username){
+            case 'Admin':{
+                let a = prompt('Enter password: ')
+                if(a == "TheMaster"){
+
+                    document.writeln('Welcome.')
+                    break
+
+                }else if( a == ' '){
+
+                    document.writeln('Canceled')
+                    break
+
+                }else{
+
+                    document.writeln('Wrong password!')
+                    break
+                }
+            }
+            case ' ':{
+                document.writeln('Canceled')
+                break
+            }
+            default:{
+                document.writeln("I don't know you!!!!")
+            }
+        }
+</script>
+</body>
+</html>
