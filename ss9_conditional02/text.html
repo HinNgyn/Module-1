@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *, *::before, *::after {
+            font-family: "Poppins", sans-serif;
+            box-sizing: border-box;
+            font-weight: normal;
+            color: blue;
+        }
+
+        body {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0px;
+            padding: 0px;
+            background: linear-gradient(to right, #00AAFF, #00FF6C);
+        }
+
+        .container {
+            display: grid;
+            justify-content: center;
+            align-content: center; /* align content in the middle */
+            min-height: 100vh; /*Giving content 100 view h like space from top and bottom */
+            grid-template-columns: repeat(4, 100px);
+            grid-template-rows: minmax(120px, auto)repeat(4, 100px);
+        }
+
+
+        .container > button {
+            cursor: pointer;
+            font-size: 2rem;
+            border: 1px solid white;
+            outline: none;
+            background-color: rgba(255, 255, 255, .75);
+        }
+
+        .container > button:hover {
+            background-color: rgba(255, 255, 255, .9);
+        }
+
+        .span-two {
+            grid-column: 2 span;
+        }
+
+        .output {
+            grid-column: 1 / -1;
+            background-color: rgba(0, 0, 0, .75);
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-around;
+            flex-direction: column;
+            padding: 10px;
+            word-wrap: break-word; /*it allows us to break our word*/
+            word-break: break-all; /*break space */
+        }
+
+        .output .previous-operand{
+            color: rgba(255, 255, 255, .75);
+            font-size: 2.5rem;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="output">
+        <div class="previous-operand"></div>
+    </div>
+
+    <button data-number>1</button>
+    <button data-number>2</button>
+    <button data-number>3</button>
+    <button data-operation>+</button>
+
+    <button data-number>4</button>
+    <button data-number>5</button>
+    <button data-number>6</button>
+    <button data-operation>-</button>
+
+    <button data-number>7</button>
+    <button data-number>8</button>
+    <button data-number>9</button>
+    <button data-operation>x</button>
+
+    <button data-number>C</button>
+    <button data-number>0</button>
+    <button data-number>=</button>
+    <button data-operation>/</button>
+</div>
+</body>
+</html>
+
+<script>
+    num
+</script>
