@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ứng dụng vui DoYouLoveMe</title>
+    <style>
+        .container {
+            width: 200px;
+        }
+
+        .div_right {
+            width: 50px;
+            text-align: center;
+            float: right;
+        }
+
+        .div_left {
+            width: 50px;
+            text-align: center;
+            float: left;
+        }
+
+        #n {
+            position: absolute;
+            left: 801px;
+            top: 306px;
+            transition: 0.3s;
+        }
+
+    </style>
+</head>
+<body>
+
+<h1>Do you love me?</h1>
+<br>
+<div class="container">
+    <button id="y" class="div_left" onclick="yes()">Yes</button>
+    <button id="n" class="div_right" onmouseover="no()">No</button>
+</div>
+
+
+</body>
+</html>
+
+<script>
+    function yes() {
+        alert('<3')
+    }
+
+    function no() {
+        let a = Math.floor(Math.random() * window.innerHeight)
+        let b = Math.floor(Math.random() * window.innerWidth)
+        document.getElementById('n').style.top = a + 'px'
+        document.getElementById('n').style.left = b + 'px'
+    }
+</script>
