@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let a1 = parseFloat(prompt('Enter the score of the first exam (score <= 10):'))
+    let a2 = parseFloat(prompt('Enter the score of the middle exam (score <= 10):'))
+    let a3 = parseFloat(prompt('Enter the score of the final exam (score <= 10):'))
+    if(a1 <= 10 && a2 <= 10 && a3 <=10 ){
+        let r = a1 + a2 + a3
+        if(r >= 8){
+            alert('Extremely good student!')
+        }else if( r <= 5){
+            alert('Bad student!')
+        }else{
+            alert('Good student!')
+        }
+    }else{
+        alert('Enter again!')
+    }
+</script>

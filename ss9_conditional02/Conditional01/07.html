@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input id="phut" type="text" placeholder="minutes">
+<input id="goi" type="text" placeholder="Noi mang-Ngoai mang">
+<h3 id="r"></h3>
+<br>
+<button onclick="do_Sth()">Tính</button>
+</body>
+</html>
+
+<script>
+    function do_Sth() {
+
+        let a = parseInt(document.getElementById('phut').value)
+        let b = document.getElementById('goi').value;
+
+        if (isNaN(a) && b === '') {
+            alert('Please! enter minute and choose package!')
+        } else if (a > 0 && b === 'Ngoai mang') {
+            let c = a * 1780
+            document.getElementById('r').innerHTML = c + 'VND'
+        } else if( a > 0 && b === 'Noi mang'){
+            c = 1580 * a
+                document.getElementById('r').innerHTML = c + 'VND'
+        }
+    }
+
+</script>
