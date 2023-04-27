@@ -9,7 +9,7 @@ p {
 button {
     width: 100px;
     display: block;
-    padding: 10px; /*nội dung trong thẻ*/
+    padding: 10px; /*chỉnh vị trí nội dung trong thẻ*/
     margin: auto; /*Vị trí của thẻ*/
     border-radius: 15px; /*Chỉnh góc*/
     background-color: #003399;
