@@ -5,6 +5,10 @@
     <title>Partition triangle face</title>
 </head>
 <body>
+
+<br>
+<img src="https://sudospaces.com/labvietchem-com-vn/2021/06/dien-tich-tam-giac-2.jpg">
+<br>
 <b>Partition triangle face</b>
 <br>
 <input id="i3" type="text" placeholder="Enter value of a">
@@ -17,8 +21,14 @@
 
         let a = parseInt(document.getElementById('i3').value)
         let b = parseInt(document.getElementById('i4').value)
-
-        let area = (a * b) / 2
-        document.write('Partition triangle face ' + area)
+        if (a <= 0 && b <= 0) {
+            alert('a or b have to a positive number and higher than 0!')
+        } else {
+            var c = Math.sqrt(Math.pow(a, 2) + Math.pow(b, 2))
+        }
+        if (a * a == c * c - b * b || b * b == c * c - a * a || c * c == a * a + b * b) {
+            var t = (a * b) / 2
+        }
+        document.writeln('Partition triangle face is: ' + t)
     }
 </script>
