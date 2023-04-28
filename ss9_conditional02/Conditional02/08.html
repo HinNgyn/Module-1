@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển từ độ C sang độ F</title>
+</head>
+<body>
+<input id="doC" type="text">
+<button onclick="f()">Compute</button>
+</body>
+</html>
+<script>
+
+    function f() {
+        let a = document.getElementById('doC').value
+        if (a === '') {
+            alert('Invalid value!')
+        } else {
+            let c = a * 9 / 5 + 32
+            document.writeln(c + ' F')
+        }
+    }
+</script>

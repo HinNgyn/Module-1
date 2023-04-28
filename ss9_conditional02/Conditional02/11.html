@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<b>Calculator rectangular area</b>
+<br>
+<input id="i1" type="text" placeholder="Enter value of width">
+<input id="i2" type="text" placeholder="Enter value of height">
+<button onclick="dtichhcn()">Calculator</button>
+
+</body>
+</html>
+<script>
+
+function dtichhcn() {
+    let a = parseInt(document.getElementById('i1').value)
+    let b = parseInt(document.getElementById('i2').value)
+
+    if(a > 0 && b > 0 && a > b && a != b && !isNaN(a) && !isNaN(b)){
+        let area = a * b
+        document.write('The width is ' + a + '<br/>' + 'The height is ' + b)
+        document.write('<br/>The rectangular area is ' + area)
+    }else {
+        alert('Error!')
+    }
+}
+
+</script>

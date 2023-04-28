@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Solving first degree equations</title>
+</head>
+<body>
+
+<b>Solving first degree equations (ax + b = c)</b>
+<br>
+<input id="i5" type="text" placeholder="Enter value of a">
+<input id="i6" type="text" placeholder="Enter value of b">
+<button onclick="first()">Calculator</button>
+
+</body>
+</html>
+<script>
+    function first() {
+        let a = parseInt(document.getElementById('i5').value)
+        let b = parseInt(document.getElementById('i6').value)
+        let c
+
+        if(a == 0 || b == 0){
+            c = 0
+        }else if(a > 0 && b >0 || a < 0 && a < 0){
+            c = -b/a
+        }else if( a > 0 && b < 0 || a < 0 && b > 0){
+            c = b/a
+        }
+        document.write(c)
+    }
+</script>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Solving quadratic equation </title>
+</head>
+<body>
+<!--<p>H<sub>2</sub>O</p> H2O
+
+<p>a<sup>2</sup></p> a^2-->
+<b>Solving quadratic equations ax<sup>2</sup> + bx + c = 0</b>
+
+<br>
+<input id="i8" type="text" placeholder="Enter value of a">
+<input id="i9" type="text" placeholder="Enter value of b">
+<input id="i10" type="text" placeholder="Enter value of c">
+<button onclick="two()">Calculator</button>
+
+</body>
+</html>
+<script>
+    function two() {
+
+        let a = parseInt(document.getElementById('i8').value)
+        let b = parseInt(document.getElementById('i9').value)
+        let c = parseInt(document.getElementById('i10').value)
+
+        let x1 = 0
+        let x2 = 0
+
+        if (b == 0) {
+            let v = c / a
+            if (v > 0) {
+                let t = Math.sqrt(c / a)
+                document.writeln('The solution of equation is: x = ' + t);
+            } else {
+                document.writeln('The solution of equation is: Nothing');
+              }
+        } else {
+            let x = Math.pow(b, 2) - 4 * a * c
+
+            if(x > 0){
+                document.writeln('The equation has  two solution: ')
+                x1 = (-b + Math.sqrt(x)) / 2*a
+                x2 = (-b - Math.sqrt(x)) / 2*a
+
+                document.writeln('<br> x1 = ' + x1)
+                document.writeln('<br> x2 = ' + x2)
+            }else if (x == 0){
+                x1 = -b/2*a
+                document.writeln('The equation has only solution x1 = x2 = -b/2*a: <br>x = ' + x1)
+            }else {
+                document.writeln("The equation hasn't solution!")
+            }
+        }
+    }
+</script>

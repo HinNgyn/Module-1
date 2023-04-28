@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển từ mét sang feet</title>
+</head>
+<body>
+<b>Chuyển từ mét sang feet</b>
+<br>
+<input id="i" type="text" placeholder="meters">
+<button onclick="feet()">Convert</button>
+</body>
+</html>
+<script>
+    function feet() {
+        let a = document.getElementById('i').value
+
+        if ( a === '' || isNaN(a)) {
+            alert('Enter essential value to convert!')
+        } else {
+            let f = a * 3.2808
+            document.write(f + ' feet');
+        }
+    }
+</script>

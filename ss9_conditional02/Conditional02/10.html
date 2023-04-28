@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính diện tích hình vuông khi biết cạnh a</title>
+</head>
+<body>
+<b>Tính diện tích hình vuông</b>
+<br>
+<input id="i" type="text" placeholder="side">
+<button onclick="dtich()">Convert</button>
+</body>
+</html>
+<script>
+    function dtich() {
+        let a = document.getElementById('i').value
+        if (a === '' || isNaN(a)) {
+            alert('Enter essential value to convert!')
+        } else if (a <= 0) {
+            alert('Value side > 0')
+        } else {
+            let f = a * 4
+            document.write(f + ' feet');
+        }
+    }
+</script>

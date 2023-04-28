@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Partition triangle face</title>
+</head>
+<body>
+<b>Partition triangle face</b>
+<br>
+<input id="i3" type="text" placeholder="Enter value of a">
+<input id="i4" type="text" placeholder="Enter value of b">
+<button onclick="ptf()">Calculator</button>
+</body>
+</html>
+<script>
+    function ptf() {
+
+        let a = parseInt(document.getElementById('i3').value)
+        let b = parseInt(document.getElementById('i4').value)
+
+        let area = (a * b) / 2
+        document.write('Partition triangle face ' + area)
+    }
+</script>
