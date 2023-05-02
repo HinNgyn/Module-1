@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>15</title>
+</head>
+<body>
+<p>Kiểm tra xem một số nhập vào có phải là tuổi của một người không.
+    Một số nguyên là tuổi của một người khi nhỏ 120 và lơn hơn 0.</p>
+<br>
+<input id="i11" type="text" placeholder="Enter a person's age.">
+<button onclick="age()">Check</button>
+</body>
+</html>
+<script>
+    function age() {
+        let a =document.getElementById('i11').value
+        if(a > 0 && a < 120){
+            document.writeln("It's a person's age !!")
+        }else{
+            alert('Enter again!')
+        }
+    }
+</script>

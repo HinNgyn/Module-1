@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>16</title>
+</head>
+<body>
+<p>
+    Kiểm tra xem 3 số thực (a,b,c) nhập vào có phải là cạnh của một tam giác.
+    <br> Điều kiện để a,b,c là cạnh của một tam giác.
+</p>
+<input id="i11" type="text" placeholder="Enter a ">
+<input id="i12" type="text" placeholder="Enter b ">
+<input id="i13" type="text" placeholder="Enter c ">
+<button onclick="checkTriangle()">Check</button>
+</body>
+</html>
+<script>
+    function checkTriangle() {
+        let a = +document.getElementById('i11').value
+        let b = +document.getElementById('i12').value
+        let c = +document.getElementById('i13').value
+        if (a > 0 && b > 0 && c > 0) {
+            if (a + b > c && b + c > a && a + c > b){
+                return alert(true);
+            }else{
+                return alert(false);
+            }
+        } else {
+            alert('Enter any positive number to check!')
+        }
+
+
+    }
+
+
+</script>
