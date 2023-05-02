@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viết chương trình tính giá điện.</title>
+</head>
+<body>
+
+<input id="price" type="text" placeholder="Enter kWh">
+<br>
+<p id="001"></p>
+<br>
+<button onclick="electricity()">Check</button>
+
+</body>
+</html>
+<script>
+    function electricity() {
+        const bac1 = 1.678
+        const bac2 = 1.734
+        const bac3 = 2.014
+        const bac4 = 2.536
+        const bac5 = 2.834
+        const bac6 = 2.927
+        let a = parseFloat(document.getElementById('price').value)
+        let b = 0
+        switch (true) {
+            case a < 50: {
+                b = a * bac1
+                document.getElementById('001').innerHTML = `You used to electricity into 0-50kWh, you must to pay ${b} VND`
+                break
+            }
+            case 51 < a && a < 100: {
+                b = a * bac2
+                document.getElementById('001').innerHTML = `You used to electricity into 51 - 100kWh, you must to pay ${b} VND`
+                break
+            }
+            case 101 < a && a < 200: {
+                b = a * bac3
+                document.getElementById('001').innerHTML = `You used to electricity into 101 - 200kWh, you must to pay ${b} VND`
+                break
+            }
+            case 201 < a && a < 300: {
+                b = a * bac4
+                document.getElementById('001').innerHTML = `You used to electricity into 201 - 300kWh, you must to pay ${b} VND`
+                break
+            }
+            case 301 < a && a < 400: {
+                b = a * bac5
+                document.getElementById('001').innerHTML = `You used to electricity into 301 - 400kWh, you must to pay ${b} VND`
+                break
+            }
+            case a > 401: {
+                b = a * bac6
+                document.getElementById('001').innerHTML = `You used to electricity into higher than 400kWh, you must to pay ${b} VND`
+                break
+            }
+            default: {
+                alert('Enter again!')
+                break
+            }
+        }
+    }
+</script>

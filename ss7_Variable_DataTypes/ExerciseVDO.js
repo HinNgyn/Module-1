@@ -15,7 +15,6 @@ if (a <= 10 && b <= 10 && c <= 10) {
 }
 
 
-
 /*Bài 2:  Viết chương trình nhập một giá trị là độ 0C (Celsius) và chuyển nó sang độ 0F (Fahrenheit).
     [Hướng dẫn: C/5 = (F-32)/9]*/
 d = prompt('Enter the value of Celsius: ')
@@ -24,14 +23,12 @@ let f = parseFloat(change)
 document.write('<br/>Fahrenheit is ' + f + '0F<br/>')
 
 
-
 /*Bài 3: Viết chương trình tính diện tích hình tròn*/
 
-    const PI = 3.141592
-    let r = prompt('Enter the value of radius ')
-    let circle = r*r*PI
-    document.write('Circle area '+ circle)
-
+const PI = 3.141592
+let r = prompt('Enter the value of radius ')
+let circle = r * r * PI
+document.write('Circle area ' + circle)
 
 
 // Bài 4: Viết chương trình chu vi hình tròn
@@ -39,7 +36,7 @@ document.write('<br/>Fahrenheit is ' + f + '0F<br/>')
 function rectangular() {
     var dai = parseInt(document.forms["rectangularform"]["length"].value);
     var rong = parseInt(document.forms["rectangularform"]["wide"].value);
-    var cv = (dai+rong) * 2;
-    document.getElementById('chuvi').innerHTML = "Perimeter of a rectangle "+ cv;
+    var cv = (dai + rong) * 2;
+    document.getElementById('chuvi').innerHTML = "Perimeter of a rectangle " + cv;
 }
 

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Viết chương trình tính thuế thu nhập cá nhân.</title>
+</head>
+<body>
+<input id="prices" type="text" placeholder="Enter your income here!" required="required">
+<br>
+<button onclick="income()">Compute</button>
+</body>
+</html>
+<script> 
+    function income() {
+        let a = parseFloat(document.getElementById('prices').value)
+        let b
+        if(a <= 5000000){
+            b = a* 0.05
+            document.writeln('Your tax have to submit: ' + b + ' VND')
+        }else if( a> 5000000 && a <= 10000000){
+            b = a * 0.1
+            document.writeln('Your tax have to submit: ' + b + ' VND')
+        }else if( a > 10000000){
+            b = a * 0.15
+            document.writeln('Your tax have to submit: ' + b + ' VND')
+        }
+    }
+</script>
