@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Print 20 prime</title>
+</head>
+<body>
+<p id="1"></p>
+</body>
+</html>
+<script>
+    let number = 0
+    let n = 2
+    let count = 0
+
+    let m = +prompt('How many prime you would like to print: ')
+
+    while (1) {
+        let mark = 1
+
+        for (let i = 2; i <= Math.sqrt(n); i++) {
+            if (n % i == 0) {
+                mark = 0
+                break
+            }
+        }
+
+        if (mark == 1) {
+            count++  /*we've a prime*/
+            document.writeln(n +", ")
+        }
+        if(count >= m){
+            break
+        }
+        n++
+    }
+/*bai_1*/
+    let n = 2
+    let count = 0
+    while (count < 20) {
+        let mark = 1
+
+        for (let i = 2; i <= Math.sqrt(n); i++) {
+
+            if (n % i == 0) {
+                mark = 0
+                break
+            }
+        }
+
+        if (mark == 1) {
+            count++  /*we've a prime*/
+            document.writeln(n +", ")
+        }
+        n++
+    }
+
+</script>
