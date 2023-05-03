@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game đoán số</title>
+    <style>
+        body {
+            text-align: center;
+            padding: 200px;
+        }
+    </style>
+</head>
+<body>
+<b>Game đoán số</b><br>
+<p>(Rule: We have a measure from 1 to 10. If you choose any number in that space same the consequence, you <b>WIN</b>)
+    <br>
+    <b>you have 3 opportunity</b>
+</p>
+<br>
+<button onclick="doan()">Play</button>
+</body>
+</html>
+<script>
+    debugger
+
+    function doan() {
+        let i = 0
+        while (1) {
+            let number = +parseInt(prompt('Enter your number (1-10):'))
+            if (number <= 10 && number >= 1) {
+                let a = Math.floor(Math.random() * 10) + 1
+                if (a == number) {
+                    document.writeln('<br>Your number you guest: ' + number)
+                    document.writeln("Result = " + a + '<br>')
+                    document.writeln('Right!')
+                } else {
+                    document.writeln('<br>Your number you guest: ' + number)
+                    document.writeln('<br>' + "Result = " + a + '<br>')
+                    document.writeln('Wrong!!')
+                }
+            } else {
+                alert('Please enter a number in space!!!')
+                number = 0
+            }
+            if (!isNaN(number)) {
+                i++
+                if (i == 3) {
+                    break
+                }
+            }
+
+        }
+    }
+</script>
