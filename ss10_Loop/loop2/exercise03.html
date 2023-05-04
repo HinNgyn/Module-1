@@ -8,16 +8,12 @@
 </body>
 </html>
 <script>
-    let number = +prompt('How many number of prime you would like to print: ')
-    let n = 1, m = 1, t
-debugger
-    document.writeln(n + " , " + m + " , ")
-    if (number >2) {
-        for (let i = 2; i < number; i++) {
+
+    let n = 1, m = 0, t
+        for (let i = 0; i < 20; i++) {
             t = n + m
-            document.writeln(t + " , ")
             n = m
             m = t
-        }
+            document.writeln(t + " , ")
     }
 </script>

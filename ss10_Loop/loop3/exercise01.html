@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In dãy Finonaci</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let number = +prompt("How many fibonacci's number you would like to print: ")
+    let n = 1, m = 1, t = 0, i = 2
+    if (number > 2) {
+
+document.writeln(m + ' , ' + n)
+        for (i; i <= number - 1; i++) {
+            t = n + m
+            document.writeln(t)
+            n = m
+            m = t
+        }
+    }else{
+        alert('Enter again!!!')
+    }
+</script>

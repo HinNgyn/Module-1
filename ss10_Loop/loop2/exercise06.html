@@ -11,12 +11,24 @@
 <script>
     let sum = 0
     let count = 0
-    for (let i = 1; i < 300; i++) {
+    for (let i = 1; ; i++) {
         if (i % 7 == 0 && count < 30) {
             count++
-
             sum += i
         }
-    }document.writeln(sum)
+    }
+    document.writeln(sum)
 
+    let text = '';
+    let sum = 0;
+    let count = 0;
+    for (let i = 1; count < 30; i++) {
+        if (i % 7 == 0) {
+            count++;
+            sum += i;
+            text += `${i} + `;
+        }
+    }
+    text = text.substring(0, text.length - 2);//a string to store all of number divided by 7
+    document.write(`${text}= ${sum}`);
 </script>

@@ -14,13 +14,29 @@
 <script>
 
     let i
-    while(1){
-        let n = +prompt('Enter temperature currently: ')
-        if(n > 100){
-           n = prompt('Decreasing temperature.')
-        }else if(n < 20){
+    while (1) {
+        let n = +prompt('Enter temperature now: ')
+        if (n > 100) {
+            n = prompt('Decreasing temperature.')
+        } else if (n < 20) {
             prompt('Increasing temperature.')
+        } else if (n >= 20 || 100 <= n) {
+            alert(1)
+            break
         }
     }
 
+    /*do_while*/
+
+    do {
+        let i = +prompt('Enter temperature now')
+        if (i > 100) {
+            i = prompt('Decreasing temperature now')
+        } else if (i < 20) {
+            i = prompt('Increasing temperature now')
+        }
+    } while (i > 20 && i < 100)
+    {
+        alert(1)
+    }
 </script>
