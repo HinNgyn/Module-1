@@ -10,15 +10,14 @@
 </html>
 <script>
     let number = +prompt("How many fibonacci's number you would like to print: ")
-    let n = 1, m = 1, t = 0, i = 2
+    let n = 1, m = 0, t = 0, i = 1
     if (number > 2) {
 
-document.writeln(m + ' , ' + n)
-        for (i; i <= number - 1; i++) {
+        for (i ; i <= number; i++) {
             t = n + m
-            document.writeln(t)
             n = m
             m = t
+            document.writeln(t)
         }
     }else{
         alert('Enter again!!!')
