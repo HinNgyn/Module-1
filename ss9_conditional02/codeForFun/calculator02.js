@@ -11,6 +11,7 @@ class Calculator {
     /*Next we will create all of function*/
 
     clear() {
+        debugger
         /*this function clear everything all of the element from current and operand operand equal empty string*/
         this.currentOperand = ''
         this.previousOperand = ''
@@ -26,7 +27,7 @@ class Calculator {
     }
 
     appendNumber(number) {
-        /*to hooked up with all of  our button and our display is probably being updated every time we click*/
+        /*to hooked up with all of our button and our display is probably being updated every time we click*/
         if (number === "." && this.currentOperand.includes('.')) return
         this.currentOperand = this.currentOperand.toString() + number.toString()
     }

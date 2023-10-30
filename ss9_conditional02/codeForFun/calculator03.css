@@ -48,7 +48,7 @@ body {
     justify-content: space-around;
     flex-direction: column;
     padding: 10px;
-    word-wrap: break-word; /*it allows us to break our word*/
+    word-wrap: break-word; /*it permits us to break our word*/
     word-break: break-all; /*break space */
 }
 

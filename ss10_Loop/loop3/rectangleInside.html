@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rectangle inside</title>
+</head>
+<body>
+</body>
+</html>
+<script>
+    /*
+
+ *   *    *
+ *        *
+ *        *
+ *        *
+ *   *    *
+
+    */
+    let a = +prompt('Enter width of rectangle: ')
+    let b = +prompt('Enter height of rectangle: ')
+
+    for (let i = 1; i <= a; i++) {
+        for (let j = 1; j <= b; j++) {
+            if (i == 1 || i == a || j == 1 || j == b) {
+                document.writeln('&nbsp*&nbsp')
+            } else {
+                document.writeln('&nbsp&nbsp&nbsp&nbsp')
+            }
+        }
+        document.writeln('<br>')
+    }
+</script>
